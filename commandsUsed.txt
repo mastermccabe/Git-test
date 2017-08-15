@@ -1,0 +1,54 @@
+mkdir gittest
+$ touch index.html
+$ touch styles.css
+$ touch aboutMe.txt
+
+$ mv aboutMe.txt gittest/
+$ mv index.html gittest/
+$ mv styles.css gittest/
+
+$ cd gittest/
+$ nano aboutMe.txt
+
+$ less aboutMe.txt
+
+git init
+git commit -m "about me"
+
+Untracked files:
+	aboutMe.txt
+	index.html
+	styles.css
+
+
+$ git add .
+$ git commit -m "about me"
+
+$ git remote add origin https://github.com/mastermccabe/Git-test
+$ git push -u origin master
+
+$ nano aboutMe.txt
+
+$ git commit -m "updated movie"
+
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+	modified:   aboutMe.txt
+
+no changes added to commit
+$ git log
+
+$ git revert -e
+'
+$ nano aboutMe.txt
+
+$ git commit -m "book"
+
+$ git add .
+
+$ git commit -m "updated book"
+
+$ git push
+
+$ git commit -m "commandsUsed.txt added"
